@@ -14,15 +14,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel='icon' href='./logo.ico' type='image/x-icon' sizes="48x48" />
+    <link rel='icon' href='https://www.enoraleguen.fr/logo.ico' type='image/x-icon' sizes="48x48" />
     <script data-search-pseudo-elements defer src="https://pro.fontawesome.com/releases/v5.10.1/js/all.js"></script>
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/mdb.min.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="https://www.enoraleguen.fr/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://www.enoraleguen.fr/css/mdb.min.css" rel="stylesheet">
+    <link href="https://www.enoraleguen.fr/css/style.css" rel="stylesheet">
 </head>
 <body>
   <header>
-    <?php include('./public/navbar.php'); ?>
+    <?php include('https://www.enoraleguen.fr/public/navbar.php'); ?>
 
 <div id="intro" class="view">
   <div id="intro" class="view">
@@ -34,7 +34,7 @@
                       <hr class="hr-light">
                       <h4 class="white-text my-4"> Apprentie chef de projet<span style="color:#009688;"> | </span>Experte en ingénieurie Systèmes et réseaux.         </h4>
                       <button type="button" href=""class="btn btn-outline-white">Réalisation<i class="fa fa-book ml-2"></i></button>
-                        <button type="button" class="btn btn-outline-white">Compétences<i class="fa fa-book ml-2" href="./public/competence/competence.php"></i></button>
+                        <button type="button" class="btn btn-outline-white">Compétences<i class="fa fa-book ml-2" href="https://www.enoraleguen.fr/public/competence/competence.php"></i></button>
 
                   </div>
 
@@ -128,7 +128,7 @@
             </section>
         </div>
   </main>
-<?php include('./public/footer.php'); ?>
+<?php include('https://www.enoraleguen.fr/public/footer.php'); ?>
 
     <script>
     $('.carousel').carousel({
