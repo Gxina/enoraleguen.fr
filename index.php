@@ -14,11 +14,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel='icon' href='https://www.enoraleguen.fr/logo.ico' type='image/x-icon' sizes="48x48" />
+    <link rel='icon' href='http://www.enoraleguen.fr/logo.ico' type='image/x-icon' sizes="48x48" />
     <script data-search-pseudo-elements defer src="https://pro.fontawesome.com/releases/v5.10.1/js/all.js"></script>
-    <link href="https://www.enoraleguen.fr/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://www.enoraleguen.fr/css/mdb.min.css" rel="stylesheet">
-    <link href="https://www.enoraleguen.fr/css/style.css" rel="stylesheet">
+    <link href="http://www.enoraleguen.fr/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://www.enoraleguen.fr/css/mdb.min.css" rel="stylesheet">
+    <link href="http://www.enoraleguen.fr/css/style.css" rel="stylesheet">
 </head>
 <body>
   <header>
