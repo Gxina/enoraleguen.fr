@@ -17,8 +17,8 @@
     <link rel='icon' href='./logo.ico' type='image/x-icon' sizes="48x48" />
     <script data-search-pseudo-elements defer src="https://pro.fontawesome.com/releases/v5.10.1/js/all.js"></script>
     <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link href="./EnoraPortefolio/css/mdb.min.css" rel="stylesheet">
-    <link href="./EnoraPortefolio/css/style.css" rel="stylesheet">
+    <link href="./css/mdb.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
   <header>
