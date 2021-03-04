@@ -24,6 +24,7 @@
     <link href="https://www.enoraleguen.fr/public/realisation/realisation.css" rel="stylesheet">
 </head>
 <body>
+   
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
 
@@ -66,6 +67,22 @@
         </div>
       </div>
       </nav>
+     <script>
+        // Porfolio isotope and filter
+  var portfolioIsotope = $('.portfolio-container').isotope({
+    itemSelector: '.portfolio-item',
+    layoutMode: 'fitRows'
+  });
+
+  $('#portfolio-flters li').on( 'click', function() {
+    $("#portfolio-flters li").removeClass('filter-active');
+    $(this).addClass('filter-active');
+
+    portfolioIsotope.isotope({ filter: $(this).data('filter') });
+  });
+
+   </script>
+     
     <section id="portfolio"  class="section-bg" >
       <div class="container">
 
