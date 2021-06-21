@@ -95,7 +95,7 @@ $pictograms: (
 
 body{
   background: get-color(gray);
-  font-family: "Tahoma";
+  
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
