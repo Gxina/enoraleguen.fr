@@ -56,7 +56,7 @@ body{
 }
 
 #portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
-  background: #18d26e;
+  background: #009688;
   color: #fff;
 }
 
