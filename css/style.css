@@ -41,9 +41,9 @@ header,
 
 .progress-value {
   animation: load 3s normal forwards;
-  box-shadow: 0 10px 40px -10px #009688;
+  box-shadow: 0 10px 40px -10px #fff;
   border-radius: 100px;
-  background: #fff;
+  background: #00E5CE;
   height: 10px;
   width: 0;
 }
