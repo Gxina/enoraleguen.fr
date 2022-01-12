@@ -6,7 +6,7 @@ header,
 }
 
 #intro {
-    background: url("../../img/management.jpg")no-repeat center center fixed;
+    background: url("../img/management.jpg")no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -26,40 +26,29 @@ header,
   }
 }
 
-@keyframes fadeout {
-    from {
-        opacity:1;
-    }
-    to {
-        opacity:0;
-        display:none;
-    }
+.progress {
+  background: rgba(0,0,0,0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 20px;
 }
-@-moz-keyframes fadeout { /* sur Firefox */
-    from {
-        opacity:1;
-    }
-    to {
-        opacity:0;
-        display: none;
-    }
+
+.progress-value {
+  animation: load 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #00E5CE;
+  height: 10px;
+  width: 0;
 }
-@-webkit-keyframes fadeout { /* sur Safari et Chrome */
-    from {
-        opacity:1;
-    }
-    to {
-        opacity:0;
-        display: none;
-    }
+
+@keyframes load {
+  0% { width: 0; }
+  100% { width: }
 }
-@-o-keyframes fadeout { /* sur Opera */
-    from {
-        opacity:1;
-    }
-    to {
-        opacity:0;
-        display: none;
-    }
-}
+
 
