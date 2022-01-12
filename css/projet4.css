@@ -1,0 +1,65 @@
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+#intro {
+    background: url("../img/gest-projet.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.top-nav-collapse {
+  background-color: #24355C;
+}
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background-color: #24355C;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background-color: #24355C;
+  }
+}
+
+@keyframes fadeout {
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+        display:none;
+    }
+}
+@-moz-keyframes fadeout { /* sur Firefox */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+        display: none;
+    }
+}
+@-webkit-keyframes fadeout { /* sur Safari et Chrome */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+        display: none;
+    }
+}
+@-o-keyframes fadeout { /* sur Opera */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+        display: none;
+    }
+}
+
