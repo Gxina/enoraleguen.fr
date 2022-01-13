@@ -52,3 +52,7 @@ header,
   100% { width: }
 }
 
+.tabulation { 
+display: inline-block; 
+margin-left: 40px; 
+} 
