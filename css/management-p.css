@@ -62,4 +62,7 @@ header,
         display: none;
     }
 }
-
+.tabulation { 
+display: inline-block; 
+margin-left: 40px; 
+} 
