@@ -171,3 +171,7 @@ body{
   font-size: 14px;
   text-transform: uppercase;
 }
+.tabulation { 
+display: inline-block; 
+margin-left: 40px; 
+} 
