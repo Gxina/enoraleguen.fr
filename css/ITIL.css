@@ -1,5 +1,7 @@
 html,
-body,
+body{
+ line-height: 2;!important
+}
 header,
 #intro {
     height: 100%;
