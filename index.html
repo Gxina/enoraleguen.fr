@@ -422,7 +422,6 @@
                   </div>
                   </div>
                   
-                   
                  
                  <div class="col-md-9 mb-4">
                    <img class="d-block w-10" eight="50%" width="50%" src="https://www.enoraleguen.fr/img/nouvelle-aquitaine.jpg">
@@ -445,20 +444,16 @@
                     </div>
                   </div>
                   </div>
-                    
                  
                  <div class="col-md-9 mb-4">
                    <img class="d-block w-10" eight="50%" width="50%" src="https://www.enoraleguen.fr/img/gifi.jpg">
                    <p><a><strong>Développeuse & management </strong></a>, 2019</p>
                      <button id="myBtn6" class="myBtn btn btn-outline-warning">En savoir plus...</button>
                   
-                    
                     <!-- Modal content -->
                      <div class="modal" id="myModal6">
-                        
-                           <h2>Développeuse & management</h2>
-                        
                            <div class="modal-content" >
+                              <h2>Développeuse & management</h2>
                            <span class="close">&times;</span>
                       
                     <p>Développement d’une plateforme ludique et interactive pour découvrir les différents secteurs et acteurs de Gifi. <br>
@@ -471,7 +466,6 @@
 
 
 <script>
-
  var datamap = new Map([
             [document.getElementById("myBtn1"), document.getElementById("myModal1")],
             [document.getElementById("myBtn2"), document.getElementById("myModal2")],
@@ -485,10 +479,7 @@
         datamap.forEach((value, key) => {
             doModal(key, value);
         });
-
         function doModal(anchor, popupbox) {
-
-            // Get the <span> element that closes the modal
             var span = popupbox.getElementsByClassName("close")[0];
 
             anchor.addEventListener("click", function (event) {
