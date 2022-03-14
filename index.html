@@ -428,11 +428,12 @@
 
 
 <script>
-$(function(){
+
+   $(function(){
     $('.modal').on('show.bs.modal', function (e) {
       var button = $(e.relatedTarget)
       var index = button.data('remote')
-      $(this).find('.modal-content').load('remote' + index + '.html')
+      $(this).find('.modal-content')
     })
   })
 </script>
