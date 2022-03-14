@@ -288,8 +288,8 @@
                    <img class="d-block w-10" eight="50%" width="50%" src="https://www.enoraleguen.fr/img/intech.jpg">
                   <p><a><strong>Experte en ingénierie des Systèmes d'Information</strong></a>, 2017-2022</p>
                   <!--------------------------- The Modal ----------------------------------------------->
-                  <button id="page1" type="button" data-toggle="modal" data-target=".modal" data-remote="1" class="btn btn-outline-success" >En savoir plus...</button>
-                  <div id="1" class="modal">
+                  <button class="myBtn btn btn-outline-success" >En savoir plus...</button>
+                  <div id="myModal" class="modal">
                      
                     <!-- Modal content -->
                     <div class="modal-content">
@@ -317,8 +317,8 @@
                  <img class="d-block w-10" eight="50%" width="50%" src="https://www.enoraleguen.fr/img/SPIE.jpg">
                   <p><a><strong>Chef de projet intégration et infogérance</strong></a>, 2020-2022</p>
                     
-                    <button id="page2" type="button" data-toggle="modal" data-target=".modal" data-remote="2" class="btn btn-outline-danger">En savoir plus...</button>
-                  <div id="2" class="modal">
+                    <button class="myBtn btn btn-outline-danger">En savoir plus...</button>
+                  <div id="myModal2" class="modal">
                      
                     <!-- Modal content -->
                     <div class="modal-content">
@@ -337,8 +337,8 @@
                <div class="col-md-4 mb-1 text-center">
                    <img class="d-block w-10" eight="50%" width="50%" src="https://www.enoraleguen.fr/img/cheops.jpg">
                    <p><a><strong>Chef de projet technique</strong></a>, 2020</p>
-                    <button id="page3" type="button" data-toggle="modal" data-target=".modal" data-remote="3" class="btn btn-outline-info">En savoir plus...</button>
-                  <div id="3" class="modal">
+                    <button class="myBtn btn btn-outline-info">En savoir plus...</button>
+                  <div id="myModal3" class="modal">
                      
                     <!-- Modal content -->
                     <div class="modal-content">
@@ -363,8 +363,8 @@
                <div class="col-md-4 mb-1 text-center">
                    <img class="d-block w-10" eight="50%" width="50%" src="https://www.enoraleguen.fr/img/bordeaux.jpg">
                    <p><a><strong>Assistant chef de projet </strong></a>, 2019</p>
-                     <button id="page4" type="button" data-toggle="modal" data-target=".modal" data-remote="4" class="btn btn-outline-dark" >En savoir plus...</button>
-                  <div id="4" class="modal">
+                     <button class="myBtn btn btn-outline-dark" >En savoir plus...</button>
+                  <div id="myModal4" class="modal">
                      
                     <!-- Modal content -->
                     <div class="modal-content">
@@ -387,8 +387,8 @@
                  <div class="col-md-4 mb-1 text-center">
                    <img class="d-block w-10" eight="50%" width="50%" src="https://www.enoraleguen.fr/img/nouvelle-aquitaine.jpg">
                    <p><a><strong>Scrum master</strong></a>, 2018-2019</p>
-                      <button id="page5" type="button" data-toggle="modal" data-target=".modal" data-remote="5" class="btn btn-outline-primary" >En savoir plus...</button>
-                  <div id="5" class="modal">
+                      <button class="myBtn btn btn-outline-primary" >En savoir plus...</button>
+                  <div id="myModal5" class="modal">
                      
                     <!-- Modal content -->
                     <div class="modal-content">
@@ -410,10 +410,10 @@
                  <div class="col-md-4 mb-1 text-center">
                    <img class="d-block w-10" eight="50%" width="50%" src="https://www.enoraleguen.fr/img/gifi.jpg">
                    <p><a><strong>Développeuse & management </strong></a>, 2019</p>
-                     <button id="page6" type="button" data-toggle="modal" data-target=".modal" data-remote="6" class="btn btn-outline-warning">En savoir plus...</button>
+                     <button class="myBtn btn btn-outline-warning">En savoir plus...</button>
                   <!-- Modal content -->
-                     <div class="modal fade" id="infos">
-                        <div class="modal-dialog"> 
+                     <div class="modal" id="myModal6">
+                        
                            <div class="modal-content" >
                            <span class="close">&times;</span>
                       
@@ -422,20 +422,47 @@
                         Les technologies utilisées sont : HTML5, PHP, Javascript (pour certaines fonctions), CSS.<br> </p>
                    
                   </div>
-                 </div>
-               </div>
+                </div>
                </div>
 
 
 <script>
 
-   $(function(){
-    $('.modal').on('show.bs.modal', function (e) {
-      var button = $(e.relatedTarget)
-      var index = button.data('remote')
-      $(this).find('.modal-content')
-    })
-  })
+  // Get the modal
+var modal = document.getElementsByClassName('modal');
+
+// Get the button that opens the modal
+var btn = document.getElementsByClassName("myBtn");
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close");
+
+// When the user clicks the button, open the modal 
+btn[0].onclick = function() {
+    modal[0].style.display = "block";
+}
+
+btn[1].onclick = function() {
+    modal[1].style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span[0].onclick = function() {
+    modal[0].style.display = "none";
+}
+
+span[1].onclick = function() {
+    modal[1].style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal[0]) {
+         modal[0].style.display = "none";
+     }
+    if (event.target == modal[1]) {
+         modal[1].style.display = "none";
+     }  
+}
 </script>
                </div>
             </div>
