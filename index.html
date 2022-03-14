@@ -324,8 +324,8 @@
                    <img class="d-block w-10" eight="50%" width="50%" src="https://www.enoraleguen.fr/img/intech.jpg">
                   <p><a><strong>Experte en ingénierie des Systèmes d'Information</strong></a>, 2017-2022</p>
                   <!--------------------------- The Modal ----------------------------------------------->
-                  <button type="button" class="btn btn-outline-success" id="myBtn">En savoir plus...</button>
-                  <div id="myModal" class="modal">
+                  <button id="page1" type="button" data-toggle="modal" data-target=".modal" data-remote="1" class="btn btn-outline-success" >En savoir plus...</button>
+                  <div id="infos" class="modal">
                      
                     <!-- Modal content -->
                     <div class="modal-content">
@@ -353,8 +353,8 @@
                  <img class="d-block w-10" eight="50%" width="50%" src="https://www.enoraleguen.fr/img/SPIE.jpg">
                   <p><a><strong>Chef de projet intégration et infogérance</strong></a>, 2020-2022</p>
                     
-                    <button type="button" class="btn btn-outline-danger" id="myBtn">En savoir plus...</button>
-                  <div id="myModal1" class="modal">
+                    <button id="page2" type="button" data-toggle="modal" data-target=".modal" data-remote="2" class="btn btn-outline-danger">En savoir plus...</button>
+                  <div id="infos" class="modal">
                      
                     <!-- Modal content -->
                     <div class="modal-content">
@@ -373,8 +373,8 @@
                <div class="col-md-6 mb-4">
                    <img class="d-block w-10" eight="50%" width="50%" src="https://www.enoraleguen.fr/img/cheops.jpg">
                    <p><a><strong>Chef de projet technique</strong></a>, 2020</p>
-                    <button type="button" class="btn btn-outline-info" id="myBtn">En savoir plus...</button>
-                  <div id="myModal2" class="modal">
+                    <button id="page3" type="button" data-toggle="modal" data-target=".modal" data-remote="3" class="btn btn-outline-info">En savoir plus...</button>
+                  <div id="infos" class="modal">
                      
                     <!-- Modal content -->
                     <div class="modal-content">
@@ -399,8 +399,8 @@
                <div class="col-md-6 mb-4">
                    <img class="d-block w-10" eight="50%" width="50%" src="https://www.enoraleguen.fr/img/bordeaux.jpg">
                    <p><a><strong>Assistant chef de projet </strong></a>, 2019</p>
-                     <button type="button" class="btn btn-outline-dark" id="myBtn">En savoir plus...</button>
-                  <div id="myModal3" class="modal">
+                     <button id="page4" type="button" data-toggle="modal" data-target=".modal" data-remote="4" class="btn btn-outline-dark" >En savoir plus...</button>
+                  <div id="infos" class="modal">
                      
                     <!-- Modal content -->
                     <div class="modal-content">
@@ -423,8 +423,8 @@
                  <div class="col-md-6 mb-4">
                    <img class="d-block w-10" eight="50%" width="50%" src="https://www.enoraleguen.fr/img/nouvelle-aquitaine.jpg">
                    <p><a><strong>Scrum master</strong></a>, 2018-2019</p>
-                      <button type="button" class="btn btn-outline-primary" id="myBtn">En savoir plus...</button>
-                  <div id="myModal4" class="modal">
+                      <button id="page5" type="button" data-toggle="modal" data-target=".modal" data-remote="5" class="btn btn-outline-primary" >En savoir plus...</button>
+                  <div id="infos" class="modal">
                      
                     <!-- Modal content -->
                     <div class="modal-content">
@@ -446,7 +446,7 @@
                  <div class="col-md-6 mb-4">
                    <img class="d-block w-10" eight="50%" width="50%" src="https://www.enoraleguen.fr/img/gifi.jpg">
                    <p><a><strong>Développeuse & management </strong></a>, 2019</p>
-                     <button type="button" class="btn btn-outline-warning" id="myBtn">En savoir plus...</button>
+                     <button id="page6" type="button" data-toggle="modal" data-target=".modal" data-remote="6" class="btn btn-outline-warning">En savoir plus...</button>
                   <div id="myModal5" class="modal">
                      
                     <!-- Modal content -->
@@ -464,31 +464,13 @@
 
 
 <script>
-// Get the modal
-var modal = document.getElementById("myModal","myModal","myModa2","myModa3","myModa4","myModa5");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+$(function(){
+    $('.modal').on('show.bs.modal', function (e) {
+      var button = $(e.relatedTarget)
+      var index = button.data('remote')
+      $(this).find('.modal-content').load('remote' + index + '.html')
+    })
+  })
 </script>
                </div>
             </div>
